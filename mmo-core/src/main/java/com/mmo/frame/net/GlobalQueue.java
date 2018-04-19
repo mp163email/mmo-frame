@@ -8,13 +8,14 @@ import com.lmax.disruptor.dsl.Disruptor;
 import com.lmax.disruptor.dsl.ProducerType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 
 
 /**
  *  公共的环形队列, 放到core里可以被sm, scene等调用
- *  Created by miaopeng on 4-17
+ *  Created by miaopeng on 2018-04-17
  */
 public class GlobalQueue {
 
@@ -28,6 +29,9 @@ public class GlobalQueue {
     public static final RingBuffer<LogicEvent> logicQueue;
 
 
+    /**
+     * 静态方法里初始化了Disruptor
+     */
     static {
 
         ExecutorService logicExecutor = Executors.newSingleThreadExecutor((

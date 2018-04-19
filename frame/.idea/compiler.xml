@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="mmo-auth" />
+        <module name="mmo-core" />
+        <module name="mmo-global" />
+        <module name="mmo-guard" />
+        <module name="mmo-proto" />
+        <module name="mmo-scene" />
+        <module name="mmo-sm" />
+        <module name="mmo-start" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="mmo-auth" target="1.8" />
+      <module name="mmo-core" target="1.8" />
+      <module name="mmo-global" target="1.8" />
+      <module name="mmo-guard" target="1.8" />
+      <module name="mmo-proto" target="1.8" />
+      <module name="mmo-scene" target="1.8" />
+      <module name="mmo-sm" target="1.8" />
+      <module name="mmo-start" target="1.8" />
+      <module name="mmoframe" target="1.5" />
+      <module name="mp-global" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>
